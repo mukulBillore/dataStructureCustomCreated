@@ -1,8 +1,21 @@
 package com.bridgeLabs.linkList;
 
 public class LinkListCreation<N> {
+	
 	//creating pointer/ref to the first node
 	OneNode head;
+	//search with particular element
+	public void searchElement(N e) {
+		OneNode temp=head;
+		boolean b = true;
+		while(temp.next!=null) {
+			if(temp.data==e) {
+				System.out.println("The data is found");
+				b=false;
+				break;
+			}
+		}if(b==true) {System.out.println("The data is not-found");}
+	}
 	//delete last node
 	public void popLast() {
 		if (head == null)

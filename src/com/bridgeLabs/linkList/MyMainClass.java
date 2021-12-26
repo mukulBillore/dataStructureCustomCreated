@@ -1,6 +1,6 @@
 package com.bridgeLabs.linkList;
 
-public class MyMainClass {
+public class MyMainClass<N> {
 
 	public static void main(String[] args) {
 		//uc1
@@ -27,6 +27,7 @@ public class MyMainClass {
 		list2.addANode(nodec , nodea);
 		list2.pop();
 		print.PrintLinklist(list2);
+		
 	}
 
 }
