@@ -27,10 +27,15 @@ public class MyMainClass<N> {
 		//uc4 add after a node
 		 list2.addANode(nodec);
 		//list2.pop();
-		 print.PrintLinklist(list2);
+		 //print.PrintLinklist(list2);
 		//Adding the element after 30  
+		 //uc9
 		 list2.addANode(noded, nodeb);
 		 print.PrintLinklist(list2);
+		 int num = list2.size();
+		 System.out.println("the size of the link list is : "+num);
+		 
+		 
 	}
 
 }

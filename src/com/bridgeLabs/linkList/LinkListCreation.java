@@ -37,14 +37,26 @@ public class LinkListCreation<N> {
     }
 			
 			
-	// delete a first node
+	// delete a first node 
 	public void pop() {
 		OneNode temp=head.next;
 		head=temp;
 	} 
-	//add after certain node
+	//counting the size
+	public int size() {
+		int countSize=0;
+		OneNode let=head;
+		while(let.next!=null) {
+	        let.next=let;
+	        countSize++;
+		}
+		return countSize;
+	}
+	//add after certain node and count 
 	public void addANode(OneNode node,OneNode afterThisNode) {
 		OneNode temp = afterThisNode.next;
+		
+		int countSize=0;
 		if(temp==null) {
 			afterThisNode.next=node;
 		}
@@ -52,6 +64,7 @@ public class LinkListCreation<N> {
 			afterThisNode.next=node;
 			node.next=temp;
 		}
+	
 	}
 	//add at last node
 	public void addANode(OneNode node ) {
