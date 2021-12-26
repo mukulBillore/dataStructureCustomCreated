@@ -25,6 +25,7 @@ public class MyMainClass {
 		list2.addANode(nodeb);
 		//uc4 add after a node
 		list2.addANode(nodec , nodea);
+		list2.pop();
 		print.PrintLinklist(list2);
 	}
 
