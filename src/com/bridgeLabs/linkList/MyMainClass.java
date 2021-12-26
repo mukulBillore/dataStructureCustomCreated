@@ -15,15 +15,16 @@ public class MyMainClass {
 		list1.addANode(node1);
 		list1.addANode(node2);
 		list1.addANode(node3);
-		print.PrintLinklist(list1);
-		//uc3 is added
+		//print.PrintLinklist(list1);
+		//uc4
 		OneNode nodea = new OneNode(30);
 		OneNode nodeb = new OneNode(56);
 		OneNode nodec = new OneNode(70);
 		LinkListCreation<OneNode> list2 = new LinkListCreation<OneNode>();
 		list2.addANode(nodea);
 		list2.addANode(nodeb);
-		list2.addANode(nodec);
+		//uc4 add after a node
+		list2.addANode(nodec , nodea);
 		print.PrintLinklist(list2);
 	}
 

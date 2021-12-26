@@ -2,7 +2,7 @@ package com.bridgeLabs.linkList;
 //creating the empty node
 public class OneNode <N>{
 	 N data;
-	 OneNode next;
+	OneNode next;
 	//Getters and setters for Next of the element 
 	public OneNode getNext() {
 		return next;
