@@ -17,17 +17,20 @@ public class MyMainClass<N> {
 		list1.addANode(node3);
 		//print.PrintLinklist(list1);
 		//uc4
-		OneNode nodea = new OneNode(30);
-		OneNode nodeb = new OneNode(56);
+		OneNode nodea = new OneNode(50);
+		OneNode nodeb = new OneNode(30);
 		OneNode nodec = new OneNode(70);
+		OneNode noded = new OneNode(40);
 		LinkListCreation<OneNode> list2 = new LinkListCreation<OneNode>();
-		list2.addANode(nodea);
-		list2.addANode(nodeb);
+		  list2.addANode(nodea);
+		  list2.addANode(nodeb);
 		//uc4 add after a node
-		list2.addANode(nodec , nodea);
-		list2.pop();
-		print.PrintLinklist(list2);
-		
+		 list2.addANode(nodec);
+		//list2.pop();
+		 print.PrintLinklist(list2);
+		//Adding the element after 30  
+		 list2.addANode(noded, nodeb);
+		 print.PrintLinklist(list2);
 	}
 
 }

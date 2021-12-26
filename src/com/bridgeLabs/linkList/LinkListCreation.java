@@ -42,18 +42,18 @@ public class LinkListCreation<N> {
 		OneNode temp=head.next;
 		head=temp;
 	} 
-	//add after node
-	public void addANode(OneNode node,OneNode afterNode) {
-		OneNode temp = afterNode.next;
+	//add after certain node
+	public void addANode(OneNode node,OneNode afterThisNode) {
+		OneNode temp = afterThisNode.next;
 		if(temp==null) {
-			afterNode.next=node;
+			afterThisNode.next=node;
 		}
 		else {
-			afterNode.next=node;
+			afterThisNode.next=node;
 			node.next=temp;
 		}
 	}
-	//add after certain node
+	//add at last node
 	public void addANode(OneNode node ) {
 	//if the given node is the first element 
 		if(this.head==null) {
