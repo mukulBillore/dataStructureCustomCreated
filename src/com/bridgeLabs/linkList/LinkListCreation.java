@@ -3,11 +3,33 @@ package com.bridgeLabs.linkList;
 public class LinkListCreation<N> {
 	//creating pointer/ref to the first node
 	OneNode head;
+	//delete last node
+	public void popLast() {
+		if (head == null)
+		{}
+ 
+        if (head.next == null) {
+            head=null;
+        }
+ 
+        // Find the second last node
+        OneNode second_last = head;
+        while (second_last.next.next != null)
+            second_last = second_last.next;
+ 
+        // Change next of second last
+        second_last.next = null;
+ 
+     
+    }
+			
+			
 	// delete a first node
 	public void pop() {
 		OneNode temp=head.next;
 		head=temp;
 	} 
+	//add after node
 	public void addANode(OneNode node,OneNode afterNode) {
 		OneNode temp = afterNode.next;
 		if(temp==null) {
@@ -18,6 +40,7 @@ public class LinkListCreation<N> {
 			node.next=temp;
 		}
 	}
+	//add after certain node
 	public void addANode(OneNode node ) {
 	//if the given node is the first element 
 		if(this.head==null) {
