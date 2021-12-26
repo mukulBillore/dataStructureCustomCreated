@@ -10,9 +10,10 @@ public class QueueMainClass {
 		OneNode nodeb = new OneNode(30);
 		OneNode nodec = new OneNode(70);
 		QueueCreation queue1 = new QueueCreation();
-		queue1.enqueue(nodea);
-		queue1.enqueue(nodeb);
-		queue1.enqueue(nodec);
+		queue1.enQueue(nodea);
+		queue1.enQueue(nodeb);
+		queue1.enQueue(nodec);
+		queue1.deQueue();
 	}
 
 }

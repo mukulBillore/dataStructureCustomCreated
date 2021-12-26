@@ -5,7 +5,12 @@ import com.bridgeLabs.linkList.OneNode;
 
 public class QueueCreation {
 	LinkListCreation queue;
-	public void enqueue(OneNode node) {
+
+	public void enQueue(OneNode node) {
 		queue.addANode(node);
+
+	}
+	public void deQueue() {
+		queue.pop();
 	}
 }
