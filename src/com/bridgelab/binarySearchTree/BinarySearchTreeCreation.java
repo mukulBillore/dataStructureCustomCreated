@@ -1,16 +1,6 @@
-		package com.bridgelab.binarySearchTree;
-public class Utility {
-	
-		class BSTNode{
-			int key ;
-			BSTNode left,right;
-			
-			public BSTNode(int item){
-				key=item;
-				left=right=null;
-			}
-			
-		}
+package com.bridgelab.binarySearchTree;
+
+public class BinarySearchTreeCreation{
 		BSTNode root ;
 		public void insert(int key) {
 			
@@ -40,5 +30,32 @@ public class Utility {
 				printRec(root.right);
 			}
 		}
-	}
 
+		public void searchBST(int i) {
+			int counter = 0;
+			BSTNode temp=root;
+			if(temp != null) {
+				while(temp.key < i) {
+					System.out.println(temp.key);
+					temp = temp.left;
+				}
+				if(root.key == i) 
+					counter++;
+					while(temp.key > i) {
+						temp = temp.left;
+					}
+					if(temp.key == i) {
+						counter++;
+					}
+					if(counter > 0) {
+						System.out.println(true);
+					}
+					else {
+						System.out.println(false);
+					}
+				}
+				
+			}
+		
+
+}
