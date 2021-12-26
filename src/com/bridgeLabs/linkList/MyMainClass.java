@@ -16,7 +16,7 @@ public class MyMainClass {
 		list1.addANode(node2);
 		list1.addANode(node3);
 		//print.PrintLinklist(list1);
-		//uc2
+		//uc2 is here
 		OneNode nodea = new OneNode(30);
 		OneNode nodeb = new OneNode(56);
 		OneNode nodec = new OneNode(70);
